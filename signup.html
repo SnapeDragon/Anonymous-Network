@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title>sign up</title>
+	<link rel="shortcut icon" type="image/x-icon" href="repository/logo1.png" />
+	<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+	<style>
+	body
+	{
+		font-family: 'Aleo',serif;
+	}
+		input.box
+		{
+			font-family: monospace;
+			border:none;
+			border-bottom: 2px gray solid;
+			transition-duration: 0.5s;
+
+		}
+		input.box:focus
+		{
+			border-bottom: 2px blue solid;
+		}
+		.button
+		{
+			padding: 5px 100px;
+			margin-top: 20px;
+			font-size: 20px;
+			font-family: calibri;
+			border-radius: 5px;
+			transition-duration: 0.5s;
+			background-color: black;
+			opacity: 0.8;
+			border:solid black;
+			color:white;
+			cursor: pointer;
+			box-shadow: 0px 10px 30px black;
+		}
+		.button:hover
+		{
+			background:white;
+			color:black;
+			border:solid blue;
+			box-shadow: 0px 10px 30px blue;
+		}
+		.login
+		{
+			position: relative;
+			top: 100px;
+		}
+		img
+		{
+			border-radius: 100%;
+			border:5px dotted;
+		}
+		body
+		{
+			margin: 0;
+		}
+		header
+		{
+			padding: 20px;
+			background: black;
+			opacity: 0.7;
+			text-align: center;
+			font-size: 35px;
+			font-family: Calibri;
+			color:white;
+		}
+		a
+		{
+			text-decoration: none;
+			color:black;
+			font-family: calibri;
+			transition-duration: 0.5s;
+		}
+		a:hover
+		{
+			color:blue;
+			text-decoration: underline;
+			font-size: 20px;
+			word-spacing: -5px;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<span style="font-size: 45px;"><b><u>O</u></b></span>rbit 
+	</header>
+	
+	<center>
+<div class="login">
+
+	<img src="" id="image">
+		<script>
+			var count = 0;
+			var image = document.getElementById("image");
+			var bunch = ["repository/logo.png", "repository/logo1.png"];
+			var colorBunch = ["red","blue"];
+			image.src = bunch[0];
+			function change()
+			{
+				if(count == 2)
+					count = 0;
+				image.src = bunch[count];
+				image.style.borderColor = colorBunch[count];
+				if(count == 1)
+					image.style.borderStyle = "dashed";
+				else
+					image.style.borderStyle = "dotted";
+				count++;
+
+			}
+			setInterval(change, 1500);
+
+
+		</script>
+<table style="margin-top: 20px;">
+	<form action="up.php" method="post">
+		<tr>
+			<td>
+				<label>Name</label>
+			</td>
+			<td> <input class="box" type="text" name="name" id = "nm" required> </td>
+		</tr>
+		<tr>
+			<td>
+				<label>Surname</label>
+			</td>
+			<td> <input class="box" type="text" name="sname" id="snm" required> </td>
+		</tr>
+		<tr>
+			<td>
+				<label>Username</label>
+			</td>
+			<td> <input class="box" type="text" name="username" id="unm" required> </td>
+		</tr>
+		<tr>
+			<td>
+				<label>Password</label>
+			</td>
+			<td><input class="box" type="password" name="password" id="pwd" required></td>
+		</tr>
+		<tr>
+			
+			<td colspan="2"  style="text-align: center"> 
+				<input class="button" type="submit" name="submit" value="Submit">
+			 </td>
+		</tr>
+
+	</form>
+
+</table>
+<div style="margin-top: 8px"><a href="login.html">Log in</a></div>
+</div>
+</center>
+</body>
+</html>

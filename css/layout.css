@@ -1,0 +1,244 @@
+body
+		{
+			margin:0;
+			font-family: 'Roboto Slab', serif;
+			background-color: #edf2f6;
+			color:black;
+
+		}
+		header
+		{
+			background: #429fff;
+			height: 120px;
+			font-family: Calibri;
+			color: white;
+		}
+		#title
+		{
+			padding: 20px;
+			font-size: 35px;
+			transition-duration: 0.5s;
+			text-align: center;
+		}
+		#title:active
+		{
+			font-size: 45px;
+		}
+
+		.button
+		{	
+			cursor: pointer;
+			margin-top: 5px;
+			background-color: inherit;
+			color:white;
+			opacity: 0.7;
+			border:none;
+			
+		}
+		.button:hover
+		{	
+			color:white;
+			padding-bottom: 2px;
+			border-bottom:3px solid white;
+			opacity: 1;
+			
+		}
+		button.res
+		{
+			cursor: pointer;
+			color:#3c3c3c;
+			padding: 5px 0px;
+			border-collapse: collapse;
+			width: 80px;
+			border-radius: 50px;
+			border:2px solid;
+			background-color: white;
+			transition-duration: 0.2s;
+		}
+		button.res:hover
+		{
+			color:white;
+			border-radius: 4px;
+			border:2px solid #3c3c3c;
+			box-shadow: 0px 5px 5px gray;
+			background-color: #3c3c3c;
+		}
+		button.res:active
+		{
+			padding:0px 0px;
+		}
+		
+		input.text /* Search box */
+		{
+			/*width: 150px;*/
+			width:10%;
+			color:white;
+			padding-left: 10px;
+			background-color: inherit;
+			border:3px solid;
+			transition-duration: 0.4s;
+			border-radius: 2px;
+			opacity: 0.7;
+		}
+		input.text:focus,input.text:hover
+		{
+			border-radius: 0px;
+			border:none;
+			opacity: 1;	
+			border-bottom: 3px solid white;
+			width: 15%;
+		}
+		input.search /* Go button css */
+		{
+			padding: 2px 15px;
+			background: inherit;
+			color: white;
+			border-radius: 3px;
+			transition-duration: 0.2s;
+			border:2px solid white;
+			cursor: 
+		}
+		input.search:hover,input.search:active
+		{
+			background-color: white;
+			box-shadow: 2px 0px 5px white;
+			border-radius: 3px 10px 10px 3px;
+			color:#3c3c3c;
+			font-weight: bold;
+		}
+		#wish
+		{
+			font-family: 'Roboto Slab',serif;
+			transition-duration: 0.5s;
+			transition-delay: 0.5s;
+		}
+		tr,td
+		{
+			color:black;
+			font-family: calibri;
+			font-size: 20px;
+		}
+		.logout /*Log out button*/
+		{
+			position: relative;
+			float: right;
+			bottom:70px;
+			right:30px;
+			text-align: right;
+			width:20%;
+		}
+		.welcome /* Right corner text with user details*/
+		{
+			position: relative;
+			right:20px;
+			text-align: right;
+			float:right;
+			bottom: 55px;
+			width:40%;
+		}
+
+		/* Profile page property */
+
+		.comment li
+		{
+			
+			background-color: white;
+			box-shadow: 0px 5px 20px #dedede;
+			width: 50%;
+			border-radius: 2px;
+			border-left: 5px solid blue;
+			padding: 5px 0px;
+			height: auto;
+			transition-duration: 0.5s;
+
+		}
+		.comment li:hover
+		{
+			box-shadow: 0px 10px 20px #c4c4c4;
+		}
+		li p
+		{
+			
+			margin-left: 20px;
+		}
+		textarea
+		{
+			resize: none;
+			font-family: 'Roboto Slab',serif;
+			width: 40%;
+			height:100px;
+			padding: 10px;
+			border:1px solid #3366FF;
+			border-left: 5px solid #3366FF;
+		}
+		button.share
+		{
+			background-color: white;
+			border-radius: 100%;
+			border:2px solid black;
+			height: 50px;
+			width: 50px;
+			cursor: pointer;
+		}
+		button.share:hover
+		{
+			color:white;
+			background-color: black;
+		}
+		button.share:active
+		{
+			border:1px solid black;
+		}
+	
+		.box
+		{
+			color:gray;
+
+			font-size: 15px;
+			margin: 0;
+			position: relative;
+			bottom: 15px;
+			margin-left: 10px;
+		}		
+		.box span
+		{
+			font-family: cursive;
+			font-weight: bold;
+			margin: 8px;
+			font-size: 20px;
+		}
+
+		@media only screen and (max-width: 600px)
+		{
+		.logout
+		{
+			position: relative;
+			float: right;
+			
+			right:10px;
+			text-align: right;
+			width:20%;
+		}	
+		.welcome
+		{
+			position: relative;
+			right:20px;
+			font-size: 10px;
+			text-align: right;
+			float:right;
+			bottom: 55px;
+			width:20%;
+		}
+		input.search /* Go button css */
+		{
+			width: 50px;
+		}
+		input.text
+		{
+			width: 100px;
+		}
+		input.text:focus,input.text:hover
+		{
+			width: 100px;
+		}
+		}
